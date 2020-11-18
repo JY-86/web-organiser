@@ -1,0 +1,40 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#header-bar {
+    background-color: rgb(60, 95, 170);
+    height: 40px;
+    width: 100%;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+#main-body {
+    height: 100%;
+    width: 100%;
+
+    background-image: url("images/forest.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    margin: 5px;
+}
+
+li {
+    display: inline-block;
+}
