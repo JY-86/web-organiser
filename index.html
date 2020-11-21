@@ -12,12 +12,35 @@
 <body>
     <div id="header-bar">
         <ul>
+            <!-- <li><img src="images/logo.png" alt="Logo"></li> -->
+            <li><button class="new-list-button"></button></li>
             <li>Settings</li>
             <li>About</li>
         </ul>
     </div>
     <div id="main-body">
-
+        <div class="list-container">
+            <div>
+                <h2>To Do</h2>
+                <div class="panel-holder">
+                    <div class="panel">
+                        <div>
+                            <div>
+                                <button class="panel-button favorite-button"></button>
+                                <button class="panel-button edit-button"></button>
+                            </div>
+                            <button class="panel-button delete-button"></button>
+                        </div>
+                        <p class="disable-select">Get groceries. Buy them until they are completely gone</p>
+                    </div>
+                </div>
+            </div>
+            <textarea class="list-input" placeholder="Enter new panel contents"></textarea>
+        </div>
     </div>
+
+    <script src="scripts/list-control.js"></script>
+    <script src="scripts/create-list.js"></script>
+    <script src="scripts/background-setter.js"></script>
 </body>
 </html>
