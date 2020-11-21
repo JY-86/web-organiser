@@ -21,26 +21,45 @@
     <div id="main-body">
         <div class="list-container">
             <div>
-                <h2>To Do</h2>
+                <div class="title-container">
+                    <button class="image-button edit-button"></button>
+                    <h2>To Do</h2>
+                </div>
                 <div class="panel-holder">
                     <div class="panel">
                         <div>
                             <div>
-                                <button class="panel-button favorite-button"></button>
-                                <button class="panel-button edit-button"></button>
+                                <button class="image-button favorite-button"></button>
+                                <button class="image-button edit-button"></button>
                             </div>
-                            <button class="panel-button delete-button"></button>
+                            <button class="image-button delete-button"></button>
                         </div>
                         <p class="disable-select">Get groceries. Buy them until they are completely gone</p>
                     </div>
                 </div>
             </div>
-            <textarea class="list-input" placeholder="Enter new panel contents"></textarea>
+            <textarea class="glow-input" placeholder="Enter new panel contents"></textarea>
         </div>
     </div>
 
-    <script src="scripts/list-control.js"></script>
-    <script src="scripts/create-list.js"></script>
+    <div class="modal-box title-box invisible">
+        <div class="modal-content title-change">
+            <h3>Enter New Title</h3>
+            <input type="text" class="title-change-input">
+        </div>
+    </div>
+    
+    <div class="modal-box panel-box invisible">
+        <div class="modal-content panel-change">
+            <h3>Enter New Panel Conent</h3>
+            <textarea class="glow-input panel-edit-input"></textarea>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/constants.js"></script>
+    <script src="scripts/helper.js"></script>
     <script src="scripts/background-setter.js"></script>
+
 </body>
 </html>
